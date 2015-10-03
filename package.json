@@ -1,0 +1,19 @@
+{
+  "name": "spiesandshadows",
+  "version": "1.0.0",
+  "description": "npm for sns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heymiguel/SpiesAndShadows.git"
+  },
+  "author": "z and k",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heymiguel/SpiesAndShadows/issues"
+  },
+  "homepage": "https://github.com/heymiguel/SpiesAndShadows#readme"
+}
