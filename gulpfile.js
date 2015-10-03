@@ -14,7 +14,8 @@ gulp.task('styles', function() {
 		}))
 		.pipe(concat('style.css'))
 		.pipe(autoprefixer('last 2 version'))
-		.pipe(gulp.dest('css'));
+		.pipe(gulp.dest('css'))
+		.pipe(browserSync.stream());
 });
 
 // configure which files to watch and what tasks to use on file changes
@@ -26,7 +27,7 @@ gulp.task('watch', function() {
 	       baseDir:'./',
 	       directory: true
 	     }
-	    }); 
+	}); 
 });
 
 gulp.task('autoprefixer', function () {

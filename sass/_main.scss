@@ -1,0 +1,43 @@
+// MAIN PAGE STYLES or index, if you prefer
+
+header{
+	background: black;
+	position: fixed;
+	top:0px;
+	width: 100vw;
+}
+
+nav{
+	@include outer-container;
+	width: 100vw;
+	text-align: center;
+	.logo{
+		
+	}
+}
+
+.mainNavigation, .subNav{
+		li{
+			list-style-type: none;
+			display: inline;
+			color: white;
+			.logo{
+				@include span-columns(4);
+			}
+
+		}
+		:nth-child(1), :nth-child(2){
+			@include span-columns(2);
+			text-align: left;	
+		}
+		:nth-child(4), :nth-child(5){
+			@include span-columns(2);	
+			text-align: right;	
+		}
+}
+
+.subNav {
+	
+		display: none;
+	
+}
