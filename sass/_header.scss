@@ -1,0 +1,129 @@
+//header styles
+header{
+	background: black;
+	position: fixed;
+	top:0px;
+	width:100vw;	
+}
+
+nav{
+	@include outer-container;
+	text-align: center;
+}
+
+.mainNavigation{
+		li{
+			list-style-type: none;
+			display: inline;
+			color: white;
+		}
+		:nth-child(1){
+			@include span-columns(2);
+			text-align: left;
+		} 
+		:nth-child(2){
+			@include span-columns(3);
+			text-align: left;	
+		}
+		.logo img{
+			@include span-columns(2);
+			margin-bottom: -100px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		:nth-child(4){
+			@include span-columns(3);
+			text-align: right;	
+		} 
+		:nth-child(5){
+			@include span-columns(2);	
+			text-align: right;	
+		}
+}
+.secondNav{
+	background: goldenrod;
+	border: 1px dotted red; 
+	z-index: -1;
+	// remove me later
+	position: fixed;
+	background: pink;
+	width: 100vw;
+	top: 60px;
+	li{
+		list-style-type: none;
+		display: inline;
+	}
+	.subNav.theGame {
+		// display: block;
+		display:none;
+		color: black;
+		background: blue;
+		@include outer-container;
+		li:nth-child(1){
+			@include span-columns(2);
+		}
+		li:nth-child(2){
+			@include span-columns(2);
+		}
+		li:nth-child(3){
+			@include span-columns(4);
+			display: hidden;
+		}
+		li:nth-child(4){
+			@include span-columns(4);
+			text-align: left;
+		}
+	}
+	.subNav.theWorld {
+		// display: block;
+		display:none;
+		color: black;
+		background: blue;
+		@include outer-container;
+		li:nth-child(1){
+			@include span-columns(2);
+		}
+		li:nth-child(2){
+			@include span-columns(2);
+		}
+		li:nth-child(3){
+			@include span-columns(8);
+			display: hidden;
+		}
+	}
+	.subNav.about {
+		// display: block;
+		display:none;
+		color: black;
+		background: blue;
+		@include outer-container;
+		li:nth-child(1){
+			@include span-columns(2);
+		}
+		li:nth-child(2){
+			@include span-columns(2);
+		}
+		li:nth-child(3){
+			@include span-columns(8);
+			display: hidden;
+		}
+	}
+	.subNav.downloads {
+		// display: block;
+		display:none;
+		color: black;
+		background: blue;
+		@include outer-container;
+		:nth-child(1), :nth-child(2){
+			@include span-columns(2);
+			text-align: left;	
+		}
+		:nth-child(3){
+			@include span-columns(4);
+		}
+		:nth-child(4), :nth-child(5){
+			@include span-columns(2);	
+			text-align: right;	
+		}
+	}
+}

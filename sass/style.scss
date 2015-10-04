@@ -3,12 +3,21 @@
 
 @import "normalize";
 
+//bourbon and neat imports
 @import "bourbon/bourbon";
 @import "neat/neat";
+@import "variables";
 
-
+@import "header";
 @import "main";
 
-//bourbon and neat imports
+
+
 
 // end imports
+
+// global styles
+body{
+	background: black;
+	padding-top: 60px; //change this when you have drop downs
+}
