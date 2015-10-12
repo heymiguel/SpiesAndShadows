@@ -2,7 +2,7 @@
 header{
 	background: black;
 	position: fixed;
-	top:0px;
+	top:25px;
 	width:100vw;	
 }
 
@@ -12,32 +12,41 @@ nav{
 }
 
 .mainNavigation{
+
 		li{
 			list-style-type: none;
 			display: inline;
 			color: white;
+			text-align: center;
+			font-family: "open-sans", sans-serif;
+			font-weight: 700;
+			letter-spacing: .15rem;
+			text-transform: uppercase;
+			padding-top: 4%;
 		}
 		:nth-child(1){
 			@include span-columns(2);
-			text-align: left;
+			// text-align: left;
 		} 
 		:nth-child(2){
 			@include span-columns(3);
-			text-align: left;	
+			// text-align: left;	
 		}
 		.logo img{
 			@include span-columns(2);
 			margin-bottom: -100px;
 			margin-left: auto;
 			margin-right: auto;
+			color: white;
+
 		}
 		:nth-child(4){
 			@include span-columns(3);
-			text-align: right;	
+			// text-align: right;	
 		} 
 		:nth-child(5){
 			@include span-columns(2);	
-			text-align: right;	
+			// text-align: right;	
 		}
 }
 .secondNav{
@@ -48,29 +57,32 @@ nav{
 	position: fixed;
 	background: pink;
 	width: 100vw;
-	top: 60px;
+	top: 85px;
 	li{
 		list-style-type: none;
 		display: inline;
 	}
 	.subNav.theGame {
 		// display: block;
-		display:none;
+		// display:none;
 		color: black;
 		background: blue;
 		@include outer-container;
+		
 		li:nth-child(1){
 			@include span-columns(2);
+			text-align: center;
 		}
 		li:nth-child(2){
-			@include span-columns(2);
+			@include span-columns(3);
+			text-align: center;
 		}
 		li:nth-child(3){
-			@include span-columns(4);
+			@include span-columns(2);
 			display: hidden;
 		}
 		li:nth-child(4){
-			@include span-columns(4);
+			@include span-columns(5);
 			text-align: left;
 		}
 	}
