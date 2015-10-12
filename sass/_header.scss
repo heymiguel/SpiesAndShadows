@@ -50,18 +50,16 @@ nav{
 		}
 }
 .secondNav{
-	background: goldenrod;
-	border: 1px dotted red; 
-	z-index: -1;
-	// remove me later
 	position: fixed;
 	background: white;
+	z-index: -1;
 	width: 100vw;
 	top: 85px;
 	font-family: "open-sans", sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
-	font-size: .95em;
+	font-size: .9em;
+	letter-spacing: 1px;
 	li{
 		list-style-type: none;
 		display: inline;
@@ -70,83 +68,85 @@ nav{
 }
 	.subNav{
 		display: block;
-		// display:none;
 		color: black;
 		background: white;
 		padding: .5em 0;
 		@include outer-container;
 			&.theGame {
+				display:none;
 				li:nth-child(1){
 					@include span-columns(2);
 					text-align: left;
 				}
 				li:nth-child(2){
 					@include span-columns(3);
-					
+
 				}
 				li:nth-child(3){
-					@include span-columns(2);
+					@include span-columns(1);
 
 				}
 				li:nth-child(4){
-					@include span-columns(1);
-					
-				}
-				li:nth-child(5){
 					@include span-columns(4);
 					text-align: right;
 				}
+				li:nth-child(5){
+					@include span-columns(1);
+				}
 			}
 			&.theWorld {
-				// display: block;
+				display: block;
 				display:none;
 				color: black;
-				background: blue;
-				@include outer-container;
+				
 				li:nth-child(1){
-					@include span-columns(2);
+					@include span-columns(3);
+					text-align: left;
 				}
 				li:nth-child(2){
 					@include span-columns(2);
+					text-align: left;
 				}
 				li:nth-child(3){
-					@include span-columns(8);
-					display: hidden;
+					@include span-columns(7);
+					visibility: hidden;
 				}
 			}
 			&.about {
-				// display: block;
+				display: block;
 				display:none;
 				color: black;
-				background: blue;
-				@include outer-container;
 				li:nth-child(1){
 					@include span-columns(2);
+					text-align: left;
 				}
 				li:nth-child(2){
-					@include span-columns(2);
+					@include span-columns(3);
+					text-align: left;
 				}
 				li:nth-child(3){
-					@include span-columns(8);
-					display: hidden;
+					@include span-columns(7);
+					visibility: hidden;
 				}
 			}
 			&.downloads {
-				// display: block;
 				display:none;
 				color: black;
-				background: blue;
-				@include outer-container;
 				:nth-child(1), :nth-child(2){
 					@include span-columns(2);
 					text-align: left;	
 				}
 				:nth-child(3){
-					@include span-columns(4);
-				}
-				:nth-child(4), :nth-child(5){
 					@include span-columns(2);	
-					text-align: right;	
+				}
+				:nth-child(4){
+					@include span-columns(4);
+					text-align: right;
+				} 
+				:nth-child(5){
+					@include span-columns(2);	
+					text-align: right;
+						
 				}
 			}
 	}

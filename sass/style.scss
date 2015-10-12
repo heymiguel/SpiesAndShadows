@@ -10,6 +10,7 @@
 
 @import "header";
 @import "main";
+@import "backgroundMovie";
 
 
 
@@ -21,4 +22,5 @@ body{
 	background: black;
 	padding-top: 60px; //change this when you have drop downs
 	font-family: "Roboto", sans-serif;
+	text-decoration: none;
 }

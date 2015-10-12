@@ -5,56 +5,26 @@
 	<title>Spies and Shadows Online</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- font imports -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Roboto:400,500,400italic,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+	<!-- angular import -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="JS/snsApp.js"></script>
 </head>
-<body>
-	<header>
-		<nav>
-			<ul class="mainNavigation clearfix">
-				<li class="">the game</li>
-				<li class="">the world</li>
-				<li class="logo">
-					<img src="images/snslogo.png" alt="the sns logo">
-				</li>
-				<li class="">about</li>
-				<li class="">downloads</li>
-			</ul>
-		</nav>
-	</header>
-	<div class="secondNav">
-			<ul class="subNav theGame"> <!-- visibility hidden prolly -->
-				<li class="">the great game</li>
-				<li class="">MCS Overview</li>
-				<li>&nbsp;</li> <!-- hidden bourbon li -->
-				<li>&nbsp;</li> <!-- hidden bourbon li -->
-				<li class="">Character Classes</li>
-			</ul>
-			<ul class="subNav theWorld"> <!-- visibility hidden prolly -->
-				<li class="">the Story So far</li>
-				<li class="">Factions</li>
-				<li>&nbsp;</li> <!-- hidden bourbon li -->
-			</ul>
-			<ul class="subNav about">
-				<li class="">the Creators</li>
-				<li class="">collaborations</li>
-				<li></li> <!-- hidden bourbon li -->
-			</ul>
-			<ul class="subNav downloads">
-				<li class="">starter set</li>
-				<li class="">expansions</li>
-				<li></li> <!-- hidden bourbon li -->
-				<li class="">exclusive content</li>
-				<li class="">free downloads</li>
-			</ul>
-	</div>
+<body ng-app="snsApp" ng-controller="snsController as snsItem" >
+	<section ng-include src="'partials/navigation.html'" scope="" onload="">	
+	</section>
 	<!-- begin main text for this page -->
 	<section class="mainWelcome">
 		<div class="bigTitle">
 			<img src="images/snslogo.png">
 			<h2>This is Spies and Shadows.</h2>
+			<!-- do I want to put a typer type thing here? -->
 		</div>
 		<div class="overview">
 			<p>Boy cartel pistol knife concrete market wonton soup industrial grade artisanal claymore mine vehicle j-pop semiotics dome monofilament warehouse engine. Chiba grenade order-flow shanty town cartel modem girl nano-otaku plastic cardboard narrative military-grade range-rover rebar. Sign gang faded free-market alcohol boat otaku j-pop garage rifle-ware drugs San Francisco nano-footage weathered human. Knife BASE jump soul-delay cartel rain film into uplink tower. Sensory towards 3D-printed order-flow apophenia girl city otaku pre-tube corporation soul-delay nano. </p>
+			<blockquote>
+				you probably want the tagline here.
+			</blockquote>
 		</div>
 		<div class="connect clearfix">
 				<button class="signUp">
@@ -66,5 +36,14 @@
 		</div>
 	</section>
 	<!-- end main text for this page -->
+	<!-- video splash section-->
+
+	<div class="fullscreen-bg">
+	    <video loop muted autoplay poster="" class="fullscreen-bg__video">
+	        <source src="/vid/STARNOISE.webm" type="video/webm">
+	        <source src="/vid/STARNOISE.mp4" type="video/mp4">
+	        <source src="/vid/STARNOISE.mov" type="video/mov">
+	    </video>
+	</div>
 </body>
 </html>
