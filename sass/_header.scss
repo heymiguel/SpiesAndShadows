@@ -12,7 +12,7 @@ nav{
 }
 
 .mainNavigation{
-		li{
+		li, a{
 			list-style-type: none;
 			display: inline;
 			color: white;
@@ -73,7 +73,7 @@ nav{
 		padding: .5em 0;
 		@include outer-container;
 			&.theGame {
-				display:none;
+				// display:none;
 				li:nth-child(1){
 					@include span-columns(2);
 					text-align: left;
@@ -96,7 +96,7 @@ nav{
 			}
 			&.theWorld {
 				display: block;
-				display:none;
+
 				color: black;
 				
 				li:nth-child(1){
@@ -114,7 +114,7 @@ nav{
 			}
 			&.about {
 				display: block;
-				display:none;
+				
 				color: black;
 				li:nth-child(1){
 					@include span-columns(2);
@@ -130,7 +130,7 @@ nav{
 				}
 			}
 			&.downloads {
-				display:none;
+				
 				color: black;
 				:nth-child(1), :nth-child(2){
 					@include span-columns(2);

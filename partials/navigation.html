@@ -1,18 +1,26 @@
 <header> <!-- may want to make this reusable -->
 	<nav>
-		<ul class="mainNavigation clearfix">
-			<li class="">the game</li>
-			<li class="">the world</li>
-			<li class="logo">
+		<ul class="mainNavigation clearfix" >
+			<li class="" ng-click="toggleVis('theGame')" >
+				the game
+			</li>
+			<li class="" ng-click="toggleVis('theWorld')" >
+				the world
+			</li>
+			<li class="logo" >
 				<img src="images/snslogo.png" alt="the sns logo">
 			</li>
-			<li class="">about</li>
-			<li class="">downloads</li>
+			<li class="" ng-click="toggleVis('about')" >
+				about
+			</li>
+			<li class="" ng-click="toggleVis('download')" >
+				download
+			</li>
 		</ul>
 	</nav>
 </header>
 <div class="secondNav">
-		<ul class="subNav theGame"> <!-- visibility hidden prolly -->
+		<ul class="subNav theGame" ng-show="theGameVis"> <!-- visibility hidden prolly -->
 			<li class="">the great game</li>
 			<li class="">MCS Overview</li>
 			<li>&nbsp;</li> <!-- hidden bourbon li -->
@@ -20,17 +28,17 @@
 			<li>&nbsp;</li> <!-- hidden bourbon li -->
 			
 		</ul>
-		<ul class="subNav theWorld"> <!-- visibility hidden prolly -->
+		<ul class="subNav theWorld" ng-show="theWorldVis" > <!-- visibility hidden prolly -->
 			<li class="">the Story So far</li>
 			<li class="">Factions</li>
 			<li>&nbsp;</li> <!-- hidden bourbon li -->
 		</ul>
-		<ul class="subNav about">
+		<ul class="subNav about" ng-show="aboutVis">
 			<li class="">the Creators</li>
 			<li class="">collaborations</li>
 			<li>&nbsp;</li> <!-- hidden bourbon li -->
 		</ul>
-		<ul class="subNav downloads">
+		<ul class="subNav downloads" ng-show="downloadsVis">
 			<li class="">starter set</li>
 			<li class="">expansions</li>
 			<li>&nbsp;</li> <!-- hidden bourbon li -->
