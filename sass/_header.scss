@@ -12,7 +12,7 @@ nav{
 }
 
 .mainNavigation{
-		li, a{
+		li{
 			list-style-type: none;
 			display: inline;
 			color: white;
@@ -23,14 +23,19 @@ nav{
 			letter-spacing: .2rem;
 			text-transform: uppercase;
 			padding: 1.8em 0 .3em 0;
+
 		}
 		:nth-child(1){
 			@include span-columns(2);
-			
+			a{
+				width: 100%;
+			}
 		} 
 		:nth-child(2){
 			@include span-columns(3);
-				
+			a{
+				width: 100%;
+			}	
 		}
 		.logo img{
 			@include span-columns(2);
@@ -42,56 +47,75 @@ nav{
 		}
 		:nth-child(4){
 			@include span-columns(3);
-				
+			a{
+				width: 100%;
+			}	
 		} 
 		:nth-child(5){
 			@include span-columns(2);	
-				
+			a{
+				width: 100%;
+			}	
 		}
 }
 .secondNav{
-	position: fixed;
-	background: white;
+	// background: white;
 	z-index: -1;
-	width: 100vw;
 	top: 85px;
 	font-family: "open-sans", sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
 	font-size: .9em;
 	letter-spacing: 1px;
+	// @include outer-container;
 	li{
 		list-style-type: none;
 		display: inline;
 		text-align: center;
+	}
+	a{
+		color: black;
 	}
 }
 	.subNav{
 		display: block;
 		color: black;
 		background: white;
-		padding: .5em 0;
-		@include outer-container;
+		// padding: .5em 0;
+		// @include outer-container;
 			&.theGame {
 				// display:none;
 				li:nth-child(1){
 					@include span-columns(2);
 					text-align: left;
+					a{
+						width: 100%;
+					}	
 				}
 				li:nth-child(2){
 					@include span-columns(3);
-
+					a{
+						width: 100%;
+					}	
 				}
 				li:nth-child(3){
 					@include span-columns(1);
-
+					a{
+						width: 100%;
+					}	
 				}
 				li:nth-child(4){
 					@include span-columns(4);
 					text-align: right;
+					a{
+						width: 100%;
+					}	
 				}
 				li:nth-child(5){
 					@include span-columns(1);
+					a{
+						width: 100%;
+					}	
 				}
 			}
 			&.theWorld {
@@ -102,14 +126,23 @@ nav{
 				li:nth-child(1){
 					@include span-columns(3);
 					text-align: left;
+					a{
+						width: 100%;
+					}	
 				}
 				li:nth-child(2){
 					@include span-columns(2);
 					text-align: left;
+					a{
+						width: 100%;
+					}	
 				}
 				li:nth-child(3){
 					@include span-columns(7);
 					visibility: hidden;
+					a{
+						width: 100%;
+					}	
 				}
 			}
 			&.about {
@@ -119,14 +152,23 @@ nav{
 				li:nth-child(1){
 					@include span-columns(2);
 					text-align: left;
+					a{
+						width: 100%;
+					}	
 				}
 				li:nth-child(2){
 					@include span-columns(3);
 					text-align: left;
+					a{
+						width: 100%;
+					}	
 				}
 				li:nth-child(3){
 					@include span-columns(7);
 					visibility: hidden;
+					a{
+						width: 100%;
+					}	
 				}
 			}
 			&.downloads {
@@ -134,22 +176,37 @@ nav{
 				color: black;
 				:nth-child(1), :nth-child(2){
 					@include span-columns(2);
-					text-align: left;	
+					text-align: left;
+					a{
+						width: 100%;
+					}	
 				}
 				:nth-child(3){
-					@include span-columns(2);	
+					@include span-columns(3);	
+					a{
+						width: 100%;
+					}	
 				}
 				:nth-child(4){
-					@include span-columns(4);
+					@include span-columns(3);
 					text-align: right;
+					a{
+						width: 100%;
+					}	
 				} 
 				:nth-child(5){
 					@include span-columns(2);	
 					text-align: right;
+					a{
+						width: 100%;
+					}	
 						
 				}
 			}
 	}
 
-
+.whiteHeader{
+	background: white;
+	margin-top:25px;
+}
 	

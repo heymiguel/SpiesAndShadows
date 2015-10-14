@@ -2,48 +2,80 @@
 	<nav>
 		<ul class="mainNavigation clearfix" >
 			<li class="" ng-click="toggleVis('theGame')" >
-				the game
+				<a href="">the game</a>
 			</li>
 			<li class="" ng-click="toggleVis('theWorld')" >
-				the world
+				<a href="">the world</a>
 			</li>
 			<li class="logo" >
 				<img src="images/snslogo.png" alt="the sns logo">
 			</li>
 			<li class="" ng-click="toggleVis('about')" >
-				about
+				<a href="">about</a>
 			</li>
 			<li class="" ng-click="toggleVis('download')" >
-				download
+				<a href="">download</a> 
 			</li>
 		</ul>
 	</nav>
 </header>
-<div class="secondNav">
-		<ul class="subNav theGame" ng-show="theGameVis"> <!-- visibility hidden prolly -->
-			<li class="">the great game</li>
-			<li class="">MCS Overview</li>
-			<li>&nbsp;</li> <!-- hidden bourbon li -->
-			<li class="">Character Classes</li>
-			<li>&nbsp;</li> <!-- hidden bourbon li -->
-			
-		</ul>
-		<ul class="subNav theWorld" ng-show="theWorldVis" > <!-- visibility hidden prolly -->
-			<li class="">the Story So far</li>
-			<li class="">Factions</li>
-			<li>&nbsp;</li> <!-- hidden bourbon li -->
-		</ul>
-		<ul class="subNav about" ng-show="aboutVis">
-			<li class="">the Creators</li>
-			<li class="">collaborations</li>
-			<li>&nbsp;</li> <!-- hidden bourbon li -->
-		</ul>
-		<ul class="subNav downloads" ng-show="downloadsVis">
-			<li class="">starter set</li>
-			<li class="">expansions</li>
-			<li>&nbsp;</li> <!-- hidden bourbon li -->
-			<li class="">exclusive content</li>
-			<li class="">freebies</li>
-		</ul>
-</div>
+<section class="whiteHeader">
+<!-- 1) keep this here invisible, but with a height.
+2) write js to handle adding the color
+3) then the rest of the content.  -->
+
+
+	<nav>
+		<div class="secondNav clearfix">
+				<ul class="subNav theGame" ng-show="theGameVis"> <!-- visibility hidden prolly -->
+					<li class="">
+						<a href="http://google.com"> the great game </a>
+					</li>
+					<li class="">
+						<a href=""> MCS Overview </a>
+					</li>
+					<li>&nbsp;</li> <!-- hidden bourbon li -->
+					<li class="">
+						<a href=""> Character Classes </a>
+					</li>
+					<li>&nbsp;</li> <!-- hidden bourbon li -->
+					
+				</ul>
+				<ul class="subNav theWorld" ng-show="theWorldVis" > <!-- visibility hidden prolly -->
+					<li class="">
+						<a href="">the Story So far</a> 
+					</li>
+					<li class="">
+						<a href="">Factions</a>
+					</li>
+					<li>&nbsp;</li> <!-- hidden bourbon li -->
+				</ul>
+				<ul class="subNav about" ng-show="aboutVis">
+					<li class="">
+						<a href="">the Creators</a>
+					</li>
+					<li class="">
+						<a href="">collaborations</a>
+					</li>
+					<li>&nbsp;</li> <!-- hidden bourbon li -->
+				</ul>
+				<ul class="subNav downloads" ng-show="downloadsVis">
+					<li class="">
+						<a href="">starter set</a>
+					</li>
+					<li class="">
+						<a href="">expansions</a>
+					</li>
+					<li>&nbsp;</li> <!-- hidden bourbon li -->
+					<li class="">
+						<a href="">exclusive content</a>
+					</li>
+					<li class="">
+						<a href="">freebies</a>
+					</li>
+				</ul>
+		</div>
+	</nav>
+</section>	
+
 <!-- end navigation -->
