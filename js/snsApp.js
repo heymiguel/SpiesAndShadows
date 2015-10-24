@@ -22,16 +22,8 @@ sns.navigationListener = function(){
 				secondNav = "downloads";
 				break;
 		}
-		console.log(secondNav);
-		//hide all non selected menus
 		$('.subNav').hide();
-		$('.'+secondNav).show();
-		//show this one
-
-		// console.log(e.currentTarget.className);
-		//need to turn all other menus off first
-		
-
+		$('.'+secondNav).slideDown("fast");
 	});
 };
 
