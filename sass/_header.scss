@@ -58,7 +58,8 @@ nav{
 		}
 }
 .secondNav{
-	// background: white;
+	background: white;
+	height: 1.2em;
 	z-index: -1;
 	top: 85px;
 	font-family: "open-sans", sans-serif;
@@ -80,10 +81,11 @@ nav{
 		display: block;
 		color: black;
 		background: white;
+
 		// padding: .5em 0;
 		// @include outer-container;
 			&.theGame {
-				// display:none;
+				display:none;
 				li:nth-child(1){
 					@include span-columns(2);
 					text-align: left;
