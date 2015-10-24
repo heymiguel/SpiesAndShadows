@@ -6,14 +6,90 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- font imports -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
-	<!-- angular import -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.min.js"></script>
+	<!-- libraries import -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script src="JS/snsApp.js"></script>
 </head>
-<body ng-app="snsApp" ng-controller="snsController" >
-	<section ng-include src="'partials/navigation.html'" scope="" onload="" >	
-	</section>
+<body  >
+	<header> <!-- may want to make this reusable -->
+		<nav>
+			<ul class="mainNavigation clearfix" >
+				<li class="">
+					<a href="">the game</a>
+				</li>
+				<li class="">
+					<a href="">the world</a>
+				</li>
+				<li class="logo" >
+					<img src="images/snslogo.png" alt="the sns logo">
+				</li>
+				<li class="" >about</a>
+				</li>
+				<li class="" >
+					<a href="">download</a> 
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="whiteHeader">
+	<!-- 1) keep this here invisible, but with a height.
+	2) write js to handle adding the color
+	3) then the rest of the content.  -->
+
+
+		<nav>
+			<div class="secondNav clearfix">
+					<ul class="subNav theGame"> <!-- visibility hidden prolly -->
+						<li class="">
+							<a href="http://google.com"> the great game </a>
+						</li>
+						<li class="">
+							<a href=""> MCS Overview </a>
+						</li>
+						<li>&nbsp;</li> <!-- hidden bourbon li -->
+						<li class="">
+							<a href=""> Character Classes </a>
+						</li>
+						<li>&nbsp;</li> <!-- hidden bourbon li -->
+						
+					</ul>
+					<ul class="subNav theWorld"  > <!-- visibility hidden prolly -->
+						<li class="">
+							<a href="">the Story So far</a> 
+						</li>
+						<li class="">
+							<a href="">Factions</a>
+						</li>
+						<li>&nbsp;</li> <!-- hidden bourbon li -->
+					</ul>
+					<ul class="subNav about" >
+						<li class="">
+							<a href="">the Creators</a>
+						</li>
+						<li class="">
+							<a href="">collaborations</a>
+						</li>
+						<li>&nbsp;</li> <!-- hidden bourbon li -->
+					</ul>
+					<ul class="subNav downloads" >
+						<li class="">
+							<a href="">starter set</a>
+						</li>
+						<li class="">
+							<a href="">expansions</a>
+						</li>
+						<li>&nbsp;</li> <!-- hidden bourbon li -->
+						<li class="">
+							<a href="">exclusive content</a>
+						</li>
+						<li class="">
+							<a href="">freebies</a>
+						</li>
+					</ul>
+			</div>
+		</nav>
+	</section>	
 	<!-- begin main text for this page -->
 	<section class="mainWelcome">
 		<div class="bigTitle">
