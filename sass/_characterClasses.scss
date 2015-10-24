@@ -1,0 +1,26 @@
+// convenience classes
+.flexie{
+	display: flex;
+}
+
+.ccOneFour{
+	width: 25%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.characterClasses{
+	color: white;
+	.soldier{
+		background: blue;
+	}
+	.faceman{
+		background: red;
+	}
+	.scout{
+		background: yellow;
+	}
+	.cypher{
+		background: green;
+	}
+}
